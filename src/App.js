@@ -1,23 +1,31 @@
-import logo from './logo.svg';
-import './App.css';
 
+import CourseList from './components/CourseList';
+import Login from './components/Login';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import { BrowserRouter, Route , Routes} from 'react-router-dom';
+import Header from './components/Header';
+import StudentList from './components/StudentList';
+import TrainerList from './components/TrainerList';
+import AssignmentList from './components/AssignmentList';
+import AddCourseForm from './components/AddCourse';
 function App() {
+
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <BrowserRouter>
+        <Routes>
+          <Route>
+            <Route path='/' element={<Login/>}/>
+            <Route path='/menu' element={<Header/>}/>
+            <Route path='/courses' element={<CourseList/>}/>
+            <Route path='/add-course' element={<AddCourseForm/>}/>
+            <Route path='/students' element={<StudentList/>}/>
+            <Route path='/trainers' element={<TrainerList/>}/>
+            <Route path='/assignments' element={<AssignmentList/>}/>
+          </Route>
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 }

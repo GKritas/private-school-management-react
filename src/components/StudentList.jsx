@@ -8,7 +8,8 @@ import TableContainer from '@mui/material/TableContainer';
 import TableHead from '@mui/material/TableHead';
 import TableRow from '@mui/material/TableRow';
 import Paper from '@mui/material/Paper';
-import Header from './Header';
+import Header from './header/Header';
+import Footer from './footer/Footer';
 
 
 export default function StudentList() {
@@ -76,6 +77,7 @@ export default function StudentList() {
           </TableBody>
         </Table>
       </TableContainer>
+      <Footer/>
     </div>
   );
 }

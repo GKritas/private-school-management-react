@@ -8,14 +8,14 @@
     background-color: #f9f9f9;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
     margin: 20px auto;
-  }
-  
-  .course-form h2 {
+}
+
+.course-form h2 {
     font-size: 24px;
     margin: 0 0 20px 0;
-  }
-  
-  .course-form button.close-button {
+}
+
+.course-form button.close-button {
     border: none;
     background-color: transparent;
     font-size: 24px;
@@ -23,24 +23,24 @@
     color: #888;
     cursor: pointer;
     margin-left: auto;
-  }
-  
-  .course-form button.close-button:hover {
+}
+
+.course-form button.close-button:hover {
     color: #555;
-  }
-  
-  .course-form div {
+}
+
+.course-form div {
     margin-bottom: 10px;
-  }
-  
-  .course-form label {
+}
+
+.course-form label {
     display: inline-block;
     font-weight: bold;
     margin-bottom: 5px;
-  }
-  
-  .course-form input,
-  .course-form textarea {
+}
+
+.course-form input,
+.course-form textarea {
     width: 100%;
     padding: 10px;
     font-size: 16px;
@@ -48,30 +48,30 @@
     border-radius: 5px;
     background-color: #fff;
     box-sizing: border-box;
-  }
-  
-  .course-form input[type="date"],
-  .course-form input[type="number"] {
+}
+
+.course-form input[type="date"],
+.course-form input[type="number"] {
     -webkit-appearance: none;
     -moz-appearance: textfield;
-  }
-  
-  .course-form input[type="date"]::-webkit-calendar-picker-indicator {
+}
+
+.course-form input[type="date"]::-webkit-calendar-picker-indicator {
     background-color: transparent;
     color: #888;
     cursor: pointer;
     font-size: 18px;
     padding: 0 5px;
-  }
-  
-  .course-form input[type="date"]:focus,
-  .course-form input[type="number"]:focus,
-  .course-form textarea:focus {
+}
+
+.course-form input[type="date"]:focus,
+.course-form input[type="number"]:focus,
+.course-form textarea:focus {
     outline: none;
     border-color: #0077cc;
-  }
-  
-  .course-form button[type="submit"] {
+}
+
+.course-form button[type="submit"] {
     border: none;
     background-color: #0077cc;
     color: #fff;
@@ -81,9 +81,8 @@
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.2s;
-  }
-  
-  .course-form button[type="submit"]:hover {
+}
+
+.course-form button[type="submit"]:hover {
     background-color: #005fa3;
-  }
-  
+}

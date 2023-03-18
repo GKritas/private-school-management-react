@@ -1,6 +1,6 @@
 
 import CourseList from './components/courseList/CourseList';
-import Login from './components/Login';
+import Login from './components/login/Login';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { BrowserRouter, Route , Routes} from 'react-router-dom';
 import Header from './components/header/Header';

@@ -57,7 +57,9 @@ export default function CourseList() {
       <h2>Course List</h2>
       <button className="btn-add" onClick={handleAddCourse}>Add Course</button>
       {showForm && (
-        <CourseForm course={selectedCourse} handleCloseForm={handleCloseForm} refreshTable={refreshTable}/>
+        <div className='overlay'>
+          <CourseForm course={selectedCourse} handleCloseForm={handleCloseForm} refreshTable={refreshTable} />
+        </div>
       )}
       <table>
         <thead>

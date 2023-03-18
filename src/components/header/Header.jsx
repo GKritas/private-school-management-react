@@ -1,13 +1,15 @@
 import React from "react";
 import "./Header.css";
+import logo from '../../assets/logo.png';
 
 function Header() {
   return (
     <header className='header'>
       <div className='logoContainer'>
-        <img src="/logo.png" alt="Logo" className='logo' />
+        <img src={logo} alt="Kritas School" className='logo' />
+        <div className="logoTitle">Kritas Private School</div>
       </div>
-      <nav>
+      <nav className="navContainer">
         <ul className='navList'>
           <li>
             <a href="/" className='navLink'>Home</a>
@@ -29,6 +31,9 @@ function Header() {
       <div className='searchContainer'>
         <input type="text" placeholder="Search..." className='searchBar' />
         <button className='searchButton'>Search</button>
+      </div>
+      <div className="avatar">
+        avatar
       </div>
     </header>
   );

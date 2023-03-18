@@ -18,7 +18,7 @@ const CourseForm = ({ course, handleCloseForm, refreshTable }) => {
             description,
             startDate,
             endDate,
-            duration : calculateDuration(),
+            duration: calculateDuration(),
             fee
         };
         if (course) {
@@ -55,23 +55,23 @@ const CourseForm = ({ course, handleCloseForm, refreshTable }) => {
             <button className="close-button" onClick={handleCloseForm}>X</button>
             <div>
                 <label htmlFor="name">Name:</label>
-                <input type="text" id="name" value={name} onChange={(e) => setName(e.target.value)} required minLength={5}/>
+                <input type="text" id="name" value={name} onChange={(e) => setName(e.target.value)} required minLength={5} />
             </div>
             <div>
                 <label htmlFor="description">Description:</label>
-                <textarea id="description" value={description} onChange={(e) => setDescription(e.target.value)} required minLength={10}/>
+                <textarea id="description" value={description} onChange={(e) => setDescription(e.target.value)} required minLength={10} />
             </div>
             <div>
                 <label htmlFor="start-date">Start Date:</label>
-                <input type="date" id="start-date" value={startDate} onChange={(e) => setStartDate(e.target.value)} required min={new Date().toISOString().split('T')[0]}/>
+                <input type="date" id="start-date" value={startDate} onChange={(e) => setStartDate(e.target.value)} required min={new Date().toISOString().split('T')[0]} />
             </div>
             <div>
                 <label htmlFor="end-date">End Date:</label>
-                <input type="date" id="end-date" value={endDate} onChange={(e) => setEndDate(e.target.value)} min={startDate}/>
+                <input type="date" id="end-date" value={endDate} onChange={(e) => setEndDate(e.target.value)} min={startDate} />
             </div>
             <div>
                 <label htmlFor="fee">Fee:</label>
-                <input type="number" id="fee" value={fee} onChange={(e) => setFee(e.target.value)} min={0}/>
+                <input type="number" id="fee" value={fee} onChange={(e) => setFee(e.target.value)} min={0} />
             </div>
             <button type="submit">{course ? 'Update' : 'Add'}</button>
         </form>
